@@ -18,19 +18,19 @@ class ArticleController extends AdminController{
         $t = new ArticleModel();
         $rs = $t->getList()->toArray();
         $data["data"] = $rs;
-        return view("admin/article/list",$data);
+        return view("cms/article/list",$data);
     }
     function getList(){
-        return view("admin/article/list");
+        return view("cms/article/list");
     }
     function getAdd(){
-        return view("admin/article/edit");
+        return view("cms/article/edit");
     }
     function postAdd(Request $request){
 
     }
     function getEdit(){
-        return view("admin/article/edit");
+        return view("cms/article/edit");
     }
     function getDelete(){
         //return view("admin/index");

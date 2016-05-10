@@ -5,7 +5,7 @@ namespace App\Providers\Route;
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
-class ArticleRouteServiceProvider extends ServiceProvider
+class CmsRouteServiceProvider extends ServiceProvider
 {
     /**
      * This namespace is applied to the controller routes in your routes file.
