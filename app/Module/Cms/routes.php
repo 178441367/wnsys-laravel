@@ -6,4 +6,3 @@
  * Time: 11:05
  */
 Route::controller("admin/article",'ArticleController');
-Route::controller("admin/cms/model",'ModelController');

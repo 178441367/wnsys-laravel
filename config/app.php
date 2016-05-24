@@ -154,7 +154,7 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        //App\Providers\RouteServiceProvider::class,
         App\Providers\Route\AdminRouteServiceProvider::class,
         App\Providers\Route\CmsRouteServiceProvider::class,
     ],
