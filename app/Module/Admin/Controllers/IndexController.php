@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
  */
 class IndexController extends AdminController{
     function getIndex(Request $request){
+        echo 1;
         return view("admin/index");
     }
 

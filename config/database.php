@@ -65,10 +65,10 @@ return [
         ],
         'mysql_cms' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', 'test'),
-            'username'  => env('DB_USERNAME', 'root'),
-            'password'  => env('DB_PASSWORD', ''),
+            'host'      => env('DB_HOST', '172.16.152.161'),
+            'database'  => env('DB_DATABASE', 'wnsys'),
+            'username'  => env('DB_USERNAME', 'wnsys'),
+            'password'  => env('DB_PASSWORD', '111111'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => 'wn_cms_',
@@ -126,7 +126,7 @@ return [
         'cluster' => false,
 
         'default' => [
-            'host'     => env('REDIS_HOST', 'localhost'),
+            'host'     => env('REDIS_HOST', '172.16.152.161'),
             'password' => env('REDIS_PASSWORD', null),
             'port'     => env('REDIS_PORT', 6379),
             'database' => 0,
