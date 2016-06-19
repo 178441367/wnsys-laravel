@@ -6,8 +6,12 @@
  * Time: 11:05
  */
 Route::get("/",function(){
-   echo "hellow laravel";
-    app("redis")->set("k1",1);
-    echo app("redis")->get("k1");
+    $key = "test1";
+    $data = [
+        "title"=>"redis:title",
+        "content"=>"redis:content"
+    ];
+    echo app("redis")->rpush($key,json_encode($data));
+
 });
 Route::controller("admin/article",'ArticleController');

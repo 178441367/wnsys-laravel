@@ -6,4 +6,5 @@
  * Time: 11:05
  */
 Route::controller("admin/login",'LoginController');
-Route::controller("admin/index",'IndexController');
+//Route::controller("admin/index",'IndexController');
+Route::get("admin/index/{userid}/{username}","IndexController@getIndex");

@@ -126,7 +126,7 @@ return [
         'cluster' => false,
 
         'default' => [
-            'host'     => env('REDIS_HOST', '172.16.152.161'),
+            'host'     => env('REDIS_HOST', '172.16.152.165'),
             'password' => env('REDIS_PASSWORD', null),
             'port'     => env('REDIS_PORT', 6379),
             'database' => 0,

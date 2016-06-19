@@ -1,7 +1,12 @@
 <?php
 namespace App\Module\Admin\Controllers;
+use App\Jobs\SendReminderEmail;
 use App\Module\Admin\AdminController;
+use App\Module\Admin\Libs\Test;
 use Illuminate\Http\Request;
+use Illuminate\Foundation\Bus\DispatchesJobs;
+use Illuminate\Support\Facades\Input;
+
 /**
  * Created by PhpStorm.
  * User: weining
@@ -9,8 +14,18 @@ use Illuminate\Http\Request;
  * Time: 16:50
  */
 class IndexController extends AdminController{
-    function getIndex(Request $request){
-        echo 1;
+    use DispatchesJobs;
+    function getIndex($userid,Test $test,$username){
+        $params = [1,2];
+        $params2 = [4];
+        array_splice($params,1,0,$params2);
+        print_r($params);
+        //print_r(Input::get("userid"));
+        echo "$userid,$username";
+        //$method = new \ReflectionMethod(IndexController::class,"getIndex");
+        //print_r($method->getParameters());
+
+        //$this->dispatch(new SendReminderEmail());
         return view("admin/index");
     }
 
