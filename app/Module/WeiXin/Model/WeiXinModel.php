@@ -1,5 +1,6 @@
 <?php
 namespace App\Module\Cms\Model;
+use App\Model\Model;
 
 /**
  * Created by PhpStorm.
@@ -7,10 +8,6 @@ namespace App\Module\Cms\Model;
  * Date: 2016/4/2
  * Time: 22:36
  */
-class ArticleModel extends CmsModel{
-    protected $table = "article";
-    function test(){
-        return 10;
-    }
-
+class WeiXinModel extends Model{
+   protected $connection = "mysql_weixin";
 }

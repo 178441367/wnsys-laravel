@@ -81,78 +81,16 @@
             </tr>
         </thead>
         <tbody>
+        <?php foreach($data as $k=>$r){?>
         	<tr>
             	<td class="num">1</td>
-                <td class="name">admin</td>
-                <td class="process">收文</td>
+                <td class="name"><?php echo $r["title"];?></td>
+                <td class="process"><?php echo $r["content"];?></td>
                 <td class="node">登记</td>
                 <td class="time">未完成</td>
                 <td class="operate"><a href="javascript:;">查看</a></td>
             </tr>
-            <tr>
-            	<td class="num">1</td>
-                <td class="name">admin</td>
-                <td class="process">收文</td>
-                <td class="node">登记</td>
-                <td class="time">未完成</td>
-                <td class="operate"><a href="javascript:;">查看</a></td>
-            </tr>
-            <tr>
-            	<td class="num">1</td>
-                <td class="name">admin</td>
-                <td class="process">收文</td>
-                <td class="node">登记</td>
-                <td class="time">未完成</td>
-                <td class="operate"><a href="javascript:;">查看</a></td>
-            </tr>
-            <tr>
-            	<td class="num">1</td>
-                <td class="name">admin</td>
-                <td class="process">收文</td>
-                <td class="node">登记</td>
-                <td class="time">未完成</td>
-                <td class="operate"><a href="javascript:;">查看</a></td>
-            </tr>
-            <tr>
-            	<td class="num">1</td>
-                <td class="name">admin</td>
-                <td class="process">收文</td>
-                <td class="node">登记</td>
-                <td class="time">未完成</td>
-                <td class="operate"><a href="javascript:;">查看</a></td>
-            </tr>
-            <tr>
-            	<td class="num">1</td>
-                <td class="name">admin</td>
-                <td class="process">收文</td>
-                <td class="node">登记</td>
-                <td class="time">未完成</td>
-                <td class="operate"><a href="javascript:;">查看</a></td>
-            </tr>
-            <tr>
-            	<td class="num">1</td>
-                <td class="name">admin</td>
-                <td class="process">收文</td>
-                <td class="node">登记</td>
-                <td class="time">未完成</td>
-                <td class="operate"><a href="javascript:;">查看</a></td>
-            </tr>
-            <tr>
-            	<td class="num">1</td>
-                <td class="name">admin</td>
-                <td class="process">收文</td>
-                <td class="node">登记</td>
-                <td class="time">未完成</td>
-                <td class="operate"><a href="javascript:;">查看</a></td>
-            </tr>
-            <tr>
-            	<td class="num">1</td>
-                <td class="name">admin</td>
-                <td class="process">收文</td>
-                <td class="node">登记</td>
-                <td class="time">未完成</td>
-                <td class="operate"><a href="javascript:;">查看</a></td>
-            </tr>
+          <?php }?>
         </tbody>
     </table>
 </div>

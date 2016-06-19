@@ -7,7 +7,7 @@ namespace App\Module\Cms\Model;
  * Date: 2016/4/2
  * Time: 22:36
  */
-class ArticleModel extends CmsModel{
+class ArticleModel extends WeiXinModel{
     protected $table = "article";
     function test(){
         return 10;
