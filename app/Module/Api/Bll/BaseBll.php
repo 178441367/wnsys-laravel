@@ -10,7 +10,7 @@ class BaseBll{
         $appsecret = config("api.access.AppSecret");
         $url = preg_replace(array("/APPID/","/APPSECRET/"),array($appid,$appsecret),$urlTpl);
         $response = static::send($url);
-        return $response["access_token"];
+        return $response->json()["access_token"];
     }
     static public function send($url,$method = "get",$params = [] ,$header = null){
         $client = new Client($url);
@@ -21,6 +21,6 @@ class BaseBll{
         }
         Log::info("request url($method):$url");
         Log::info("reponse :".$response->getBody());
-        return $response->json();
+        return $response;
     }
 }
