@@ -5,4 +5,4 @@
  * Date: 2016/4/28
  * Time: 11:05
  */
-Route::controller("admin/login",'LoginController');
+Route::controller("admin/article",'ArticleAdminController');

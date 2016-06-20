@@ -1,6 +1,6 @@
 <?php
 namespace App\Module\Admin\Controllers;
-use App\Module\Admin\AdminController;
+use App\Module\Article\ArticleController;
 
 /**
  * Created by PhpStorm.
@@ -8,7 +8,7 @@ use App\Module\Admin\AdminController;
  * Date: 2016/4/2
  * Time: 16:50
  */
-class LoginController extends AdminController{
+class IndexController extends ArticleController{
     function getIndex(){
         return view("admin/login");
     }

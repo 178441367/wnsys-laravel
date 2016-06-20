@@ -5,7 +5,7 @@ namespace App\Providers\Route;
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
-class CmsRouteServiceProvider extends ServiceProvider
+class ArticleRouteServiceProvider extends ServiceProvider
 {
     /**
      * This namespace is applied to the controller routes in your routes file.
@@ -14,7 +14,7 @@ class CmsRouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'App\Module\Cms\Controllers';
+    protected $namespace = 'App\Module\Article\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -38,7 +38,7 @@ class CmsRouteServiceProvider extends ServiceProvider
     public function map(Router $router)
     {
         $router->group(['namespace' => $this->namespace], function ($router) {
-            require app_path('Module/Cms/routes.php');
+            require app_path('Module/Article/routes.php');
         });
     }
 }

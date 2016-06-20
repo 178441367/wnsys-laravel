@@ -1,5 +1,5 @@
 <?php
-namespace App\Module\Admin\Controllers;
+namespace App\Module\Article\Controllers;
 use App\Module\Admin\AdminController;
 use App\Module\Admin\Libs\Test;
 use Illuminate\Http\Request;
@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Input;
  * Date: 2016/4/2
  * Time: 16:50
  */
-class IndexController extends AdminController{
+class ArticleAdminController extends AdminController{
     use DispatchesJobs;
     function getIndex($userid,Test $test,$username){
         $params = [1,2];

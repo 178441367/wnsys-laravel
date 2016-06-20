@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Module\Cms;
+namespace App\Module\Shop;
 
 use App\Module\Controller;
 
-class CmsController extends Controller
+class ShopController extends Controller
 {
     
     function __construct()

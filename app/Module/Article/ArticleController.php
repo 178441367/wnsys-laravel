@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Module\Cms;
+namespace App\Module\Article;
 
 use App\Module\Controller;
 
-class WeiXinController extends Controller
+class ArticleController extends Controller
 {
-    
     function __construct()
     {
         parent::__construct();
