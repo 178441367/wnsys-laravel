@@ -17,8 +17,8 @@ class MenuController extends ApiController{
        $menu = new MenuBll();
        print_r($menu->create());
    }
-    public function postTest(Request $request){
-        Log::info("postTest:".print_r($request->all(),true));
-        echo json_encode($request->all());
-    }
+   public function getAddconditional(){
+       // print_r(MenuBll::addconditional());
+       print_r(MenuBll::getMenu());
+   }
 }

@@ -11,3 +11,4 @@ Route::get("/",function(){
 });
 Route::controller("api/access",'AccessController');
 Route::controller("api/menu",'MenuController');
+Route::controller("api/message",'MessageController');
